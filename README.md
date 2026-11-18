@@ -16,4 +16,14 @@ $ git config --global user.email "email@example.com"
         $ git init
         Initialized empty Git repository in D:/git_learn/.git/
 
-3.
+3.添加一个文件到库里并提交
+lei.lin@JM230601012273 MINGW64 /d/git_learn (master)
+$ git add README.md
+lei.lin@JM230601012273 MINGW64 /d/git_learn (master)
+$ git commit -m "wrote a readme file"
+[master (root-commit) ec7dfcb] wrote a readme file
+ 1 file changed, 19 insertions(+)
+ create mode 100644 README.md
+
+
+
