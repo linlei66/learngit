@@ -25,5 +25,55 @@ $ git commit -m "wrote a readme file"
  1 file changed, 19 insertions(+)
  create mode 100644 README.md
 
+4.
+查看当前仓库状态：git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
 
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        main.py
+        snake.py
+
+no changes added to commit (use "git add" and/or "git commit -a")
+这里可以查看在那个分支上，跟踪了那些文件，有没有改动，有没有提交
+
+查看具体改动了什么：git diff
+diff --git a/README.md b/README.md
+index 4abb690..0a31064 100644
+--- a/README.md
++++ b/README.md
+@@ -16,4 +16,14 @@ $ git config --global user.email "email@example.com"
+         $ git init
+         Initialized empty Git repository in D:/git_learn/.git/
+
+-3.
++3.添加一个文件到库里并提交
++lei.lin@JM230601012273 MINGW64 /d/git_learn (master)
++$ git add README.md
++lei.lin@JM230601012273 MINGW64 /d/git_learn (master)
++$ git commit -m "wrote a readme file"
++[master (root-commit) ec7dfcb] wrote a readme file
++ 1 file changed, 19 insertions(+)
++ create mode 100644 README.md
++
++
++
+这里可以看到具体删除-和添加的内容+
+
+再次提交(git add README.md)后：git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        .idea/
+        main.py
+        snake.py
 
