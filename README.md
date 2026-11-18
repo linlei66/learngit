@@ -76,4 +76,12 @@ Untracked files:
         .idea/
         main.py
         snake.py
+5.版本回溯
+使用git log可以看版本信息
+简洁可加参数 git log --pretty=oneline 有版本的id信息
+回溯：git reset --hard HEAD^ ,HEAD^代表上一个版本，上上一个版本HEAD^^,很多版本就是HEAD~100，上一百个版本
+--hard会回退到上个版本的已提交状态，而--soft会回退到上个版本的未提交状态，--mixed会回退到上个版本已添加但未提交的状态。现在，先放心使用--hard
+也可以在返回到最新版本，指定版本id：git reset --hard id
+Git提供了一个命令git reflog用来记录你的每一次命令
+
 
