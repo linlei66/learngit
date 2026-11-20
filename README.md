@@ -99,3 +99,13 @@ git checkout -- file命令中的--很重要，没有--，就变成了“切换�
 
 9.删除文件
 rm README.md
+
+10.远程管理，上传github
+ssh-keygen -t rsa -C "youremail@example.com" 生成你的ssh密钥，位置在user/.ssh/id_rsa.pub
+将这个密钥配置在自己的github账号上
+然后在github创建一个new repository, 填上repository name
+git remote add origin git@github.com:michaelliao/learngit.git 将michaelliao换为自己的用户名
+git push -u origin master
+上传成功
+
+
