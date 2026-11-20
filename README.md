@@ -119,5 +119,5 @@ Switched to branch 'dev'
 git branch查看当前在那个分支
 比如我们修改了README后再提交
 提交就是正常提交
-
+提交：git -u origin dev
 
