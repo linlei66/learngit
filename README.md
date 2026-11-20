@@ -108,4 +108,16 @@ git remote add origin git@github.com:michaelliao/learngit.git 将michaelliao换�
 git push -u origin master
 上传成功
 
+11.分支管理
+创建一个分支 git checkout -b dev  
+-b参数表示创建并切换，相当于以下两条命令：
+**
+$ git branch dev
+$ git checkout dev
+Switched to branch 'dev'
+**
+git branch查看当前在那个分支
+比如我们修改了README后再提交
+提交就是正常提交
+
 
