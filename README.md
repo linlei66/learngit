@@ -117,7 +117,10 @@ $ git checkout dev
 Switched to branch 'dev'
 **
 git branch查看当前在那个分支
-比如我们修改了README后再提交
+比如我们修改了README后再提交add ,commit
 提交就是正常提交
 提交：git -u origin dev
-
+目前HEAD指针在dev上，我们要合并master和dev分支
+先切换到master分支，然后git merge dev合并指令
+再删除dev分支 git branch -d dev,这里主要要先commit后才能切换分支
+这样，dev分支上的改动也到了master上了
